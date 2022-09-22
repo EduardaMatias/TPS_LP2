@@ -38,17 +38,17 @@ public class FormFrame extends JFrame implements ActionListener {
 		this.setSize(400, 180);
 		this.setResizable(false);
 		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		this.setLayout(new FlowLayout(FlowLayout.LEFT,20,10));
+		this.setLayout(new FlowLayout(FlowLayout.CENTER,20,10));
 	}
 
 	public void configInputs() {
-		nomeLabel = new Label("Nome");
+		nomeLabel = new Label("Nome      ");
 		add(nomeLabel);
 
 		nomeInput = new TextField(30);
 		add(nomeInput);
 
-		idadeLabel = new Label("Idade");
+		idadeLabel = new Label("Idade       ");
 		add(idadeLabel);
 
 		idadeInput = new TextField(30);
@@ -62,19 +62,19 @@ public class FormFrame extends JFrame implements ActionListener {
 	}
 
 	public void configButtons() {
-		buttonOk = new Button("Ok");
+		buttonOk = new Button("   Ok   ");
 		add(buttonOk);
 		buttonOk.addActionListener(this);
 
-		buttonLimpar = new Button("Limpar");
+		buttonLimpar = new Button("   Limpar   ");
 		add(buttonLimpar);
 		buttonLimpar.addActionListener(this);
 
-		buttonMostrar = new Button("Mostrar");
+		buttonMostrar = new Button("   Mostrar   ");
 		add(buttonMostrar);
 		buttonMostrar.addActionListener(this);
 
-		buttonSair = new Button("Sair");
+		buttonSair = new Button("   Sair   ");
 		add(buttonSair);
 		buttonSair.addActionListener(this);
 
