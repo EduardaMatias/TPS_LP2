@@ -11,6 +11,10 @@ public class LivroDeBiblioteca extends Livro implements ItemDeBiblioteca{
         this.status = status;
 	}
 	
+	public void setStatus(String status) {
+		this.status = status;
+	}
+
 	public String getStatus() {
 		if(this.emprestado == true) {
     		return "Emprestado";

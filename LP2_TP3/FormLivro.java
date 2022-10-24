@@ -234,6 +234,7 @@ public class FormLivro extends JFrame {
 			JOptionPane.showMessageDialog(null, "Esse livro já foi emprestado.");
 		} else {
 			livros.get(i).Empresta();
+			livros.get(i).setStatus("Emprestado");
 			JOptionPane.showMessageDialog(null, "Esse livro foi emprestado com sucesso.");
 		}
 	}
